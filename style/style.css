@@ -1,0 +1,57 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para el contenedor de los tres divs */
+.container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+/* Estilos para cada uno de los tres divs */
+.box {
+  flex-basis: 33.33%; /* Ancho de cada div */
+  height: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+/* Estilos específicos para el primer div */
+.box-1 {
+  background-color: aqua;
+}
+
+/* Estilos específicos para el segundo div */
+.box-2 {
+  background-color: rgb(47, 0, 255);
+}
+
+/* Estilos específicos para el tercer div */
+.box-3 {
+  background-color: rgb(0, 255, 30);
+}
+
+
+#buttons1 {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 1;
+  }
+  .button2 {
+    padding: 10px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  

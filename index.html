@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Experencia</title>
   <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
   <style>
     #buttons {
       position: absolute;
-  bottom: 60px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 10px;
-  z-index: 1;
+      bottom: 60px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 10px;
+      z-index: 1;
     }
+
     button {
       padding: 10px;
       font-size: 18px;
@@ -27,34 +29,44 @@
     }
   </style>
 </head>
+
 <body>
   <a-scene>
-    <video id="testVideo" src="vr test.mp4" autoplay loop ></video>
-    
+    <video id="testVideo" src="assets/videos/lluvia.mp4" autoplay="true"></video>
+
+
     <a-camera>
       <a-cursor></a-cursor>
     </a-camera>
-    
+
     <a-videosphere src="#testVideo" rotation="0 -90 0"></a-videosphere>
 
     <div id="buttons">
-      <button id="playBtn">Play</button>
-      <button id="pauseBtn">Pause</button>
+      <button id="playBtn1">Test Play scenery 1</button>
+      <button id="playBtn2">Test Play scenery 2</button>
     </div>
   </a-scene>
 
   <script>
+    var videos = ['assets/videos/vr test.mp4', 'assets/videos/test1.mp4'];
+    var videoIndex = 0;
+
     var video = document.getElementById("testVideo");
     var playBtn = document.getElementById("playBtn");
     var pauseBtn = document.getElementById("pauseBtn");
+    var nextVideo = document.getElementById("nextButton");
 
-    playBtn.onclick = function() {
+    playBtn1.onclick = function () {
+      video.src = "assets/videos/lluvia.mp4";
       video.play();
     }
 
-    pauseBtn.onclick = function() {
-      video.pause();
+    playBtn2.onclick = function () {
+      video.src = "assets/videos/nieve.mp4";
+      video.play();
     }
+
   </script>
 </body>
+
 </html>
