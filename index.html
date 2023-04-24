@@ -239,19 +239,20 @@
     </div>
     <a-scene id="scene1" antialias: true>
 
+        <a-assets>
 
-        <img id="my-image" src="assets/bg.jpg">
-        <img id="my-id" src="assets/sky.png">
-        <img id="my-snow" src="assets/snow.png">
-        <img id="my-Debris" src="assets/Debris.png">
-        <img id="my-rain" src="assets/Rain.png">
-        <img id="my-insects" src="assets/Insects.png">
-        <img id="my-Cardstart" src="assets/cardStart.png">
-        <img id="my-logo" src="assets/images/logo.png">
-        <img id="my-about" src="assets/images/about.png">
-        <img id="my-settings" src="assets/images/settings.png">
-        <img id="my-exit" src="assets/images/exit.png">
-
+            <img id="my-image" src="assets/bg.jpg">
+            <img id="my-id" src="assets/sky.png">
+            <img id="my-snow" src="assets/snow.png">
+            <img id="my-Debris" src="assets/Debris.png">
+            <img id="my-rain" src="assets/Rain.png">
+            <img id="my-insects" src="assets/Insects.png">
+            <img id="my-Cardstart" src="assets/cardStart.png">
+            <img id="my-logo" src="assets/images/logo.png">
+            <img id="my-about" src="assets/images/about.png">
+            <img id="my-settings" src="assets/images/settings.png">
+            <img id="my-exit" src="assets/images/exit.png">
+        </a-assets>
 
 
 
@@ -327,7 +328,9 @@
 
 
     <a-scene id="scene2" style="display:none">
-        <video id="testVideo" loop="true" src="assets/videos/rain.mp4"> </video>
+        <a-assets>
+            <video id="testVideo" loop="true" src="assets/videos/rain.mp4"> </video>
+        </a-assets>
         <a-videosphere rotation="0 -90 0" src="#testVideo"></a-videosphere>
 
         <a-camera look-controls-enabled="true" wasd-controls-enabled="true"><a-cursor></a-cursor></a-camera>
