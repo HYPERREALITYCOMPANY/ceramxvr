@@ -255,7 +255,6 @@
 
 
 
-
         <a-curvedimage height="8" radius="10" theta-length="30" rotation="0 220 0" scale="1 1 1" position="0 1 0"
             transparent="true" opacity=0.5 color="#101010">
         </a-curvedimage>
@@ -321,22 +320,22 @@
 
 
 
-        <a-camera wasd-controls-enabled="false"><a-cursor></a-cursor></a-camera>
+        <a-camera look-controls-enabled="true" wasd-controls-enabled="false"><a-cursor></a-cursor></a-camera>
         <a-sky src="#my-id" rotation="0 340 0"></a-sky>
 
     </a-scene>
 
 
     <a-scene id="scene2" style="display:none">
-        <a-assets>
-            <video id="testVideo" src="assets/videos/rain.mp4"> </video>
-        </a-assets>
-        <a-videosphere src="#testVideo"></a-videosphere>
+        <video id="testVideo" loop="true" src="assets/videos/rain.mp4"> </video>
+        <a-videosphere rotation="0 -90 0" src="#testVideo"></a-videosphere>
 
-        <a-camera wasd-controls-enabled="false"></a-camera>
+        <a-camera look-controls-enabled="true" wasd-controls-enabled="true"><a-cursor></a-cursor></a-camera>
+
+        <!-- 
         <div style="position: fixed; z-index: 1; top: 5px; left: 5px; ">
             <button onclick="changeScrren()">Menu</button>
-        </div>
+        </div> -->
 
     </a-scene>
 
