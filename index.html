@@ -76,7 +76,7 @@
                 el.addEventListener('click', function () {
                     scene1.style.display = 'none';
                     scene2.style.display = 'block'
-                    video.src = "assets/videos/debris.mp4";
+                    video.src = "assets/videos/forest.mp4";
                     video.play();
                     console.log('hola')
                 });
@@ -100,7 +100,7 @@
                 el.addEventListener('click', function () {
                     scene1.style.display = 'none';
                     scene2.style.display = 'block'
-                    video.src = "assets/videos/rain.mp4";
+                    video.src = "assets/videos/street.mp4";
                     video.play();
                     console.log('hola')
                 });
@@ -124,7 +124,7 @@
                 el.addEventListener('click', function () {
                     scene1.style.display = 'none';
                     scene2.style.display = 'block'
-                    video.src = "assets/videos/street.mp4";
+                    video.src = "assets/videos/dessert.mp4";
                     video.play();
                     console.log('hola')
                 });
@@ -334,7 +334,9 @@
         <a-videosphere src="#testVideo"></a-videosphere>
 
         <a-camera wasd-controls-enabled="false"></a-camera>
-
+        <div style="position: fixed; z-index: 1; top: 5px; left: 5px; ">
+            <button onclick="changeScrren()">Menu</button>
+        </div>
 
     </a-scene>
 

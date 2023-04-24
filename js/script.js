@@ -7,3 +7,15 @@ window.addEventListener("load", function(){
     }, 500);
   });
   
+
+  function changeScrren() {
+    console.log('pause');
+
+    var scene1 = document.querySelector('#scene1')
+    var scene2 = document.querySelector('#scene2')
+    var video = document.querySelector('#testVideo')
+
+    scene1.style.display = 'block';
+    scene2.style.display = 'none'
+    video.pause();
+}
