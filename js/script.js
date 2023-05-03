@@ -1,11 +1,11 @@
-window.addEventListener("load", function(){
-    var loader = document.getElementById("loader");
-    // Añade un retraso de 3 segundos antes de ocultar el loader
-    setTimeout(function(){
-        console.log('estamos aqui 3 segundos');
-        loader.style.display = 'none';
-    }, 500);
-  });
+  // window.addEventListener("load", function(){
+  //   var loader = document.getElementById("loader");
+  //   // Añade un retraso de 3 segundos antes de ocultar el loader
+  //   setTimeout(function(){
+  //       console.log('estamos aqui 3 segundos');
+  //       loader.style.display = 'none';
+  //   }, 500);
+  // });
   
 
   function changeScrren() {
@@ -15,7 +15,14 @@ window.addEventListener("load", function(){
     var scene2 = document.querySelector('#scene2')
     var video = document.querySelector('#testVideo')
 
-    scene1.style.display = 'block';
-    scene2.style.display = 'none'
-    video.pause();
+    console.log(scene1);
+
+    // scene1.pause()
+    video.play()
+
+    // scene1.style.display = 'block';
+    // scene2.style.display = 'none'
+    // video.pause();
 }
+
+  
