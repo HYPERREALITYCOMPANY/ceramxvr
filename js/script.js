@@ -1,28 +1,20 @@
-  // window.addEventListener("load", function(){
-  //   var loader = document.getElementById("loader");
-  //   // Añade un retraso de 3 segundos antes de ocultar el loader
-  //   setTimeout(function(){
-  //       console.log('estamos aqui 3 segundos');
-  //       loader.style.display = 'none';
-  //   }, 500);
-  // });
-  
+window.onload = function() {
+  var barra = document.querySelector('.barra');
+  var texto = document.querySelector('.texto');
+  var ascene = document.querySelector('#ascene');
 
-  function changeScrren() {
-    console.log('pause');
-
-    var scene1 = document.querySelector('#scene1')
-    var scene2 = document.querySelector('#scene2')
-    var video = document.querySelector('#testVideo')
-
-    console.log(scene1);
-
-    // scene1.pause()
-    video.play()
-
-    // scene1.style.display = 'block';
-    // scene2.style.display = 'none'
-    // video.pause();
+  var porcentaje = 0;
+  var intervalo = setInterval(function() {
+      if (porcentaje >= 100) {
+          clearInterval(intervalo);
+          setTimeout(function() {
+            ascene.setAttribute('visible', 'true')
+            document.querySelector('.contenedor').style.display = 'none';
+          }, 500);
+      } else {
+          porcentaje += 1;
+          barra.style.width = porcentaje + '%';
+          texto.innerHTML = 'Loading ' + porcentaje + '%';
+      }
+  }, 20);
 }
-
-  
