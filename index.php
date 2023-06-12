@@ -1242,7 +1242,7 @@
 
         <a-entity position="0 1.5 8">
 
-            <a-camera id="camera1" fov="50" reverse-mouse-drag="true" position="0 0 0" wasd-controls-enabled="false">
+            <a-camera id="camera1" fov="50" reverse-mouse-drag="false" position="0 0 0" wasd-controls-enabled="true">
                 <a-cursor id="cursor1" material="color: white" scale="1.5 1.5 1.5" fuse="false"
                     objects="none"></a-cursor>
             </a-camera>
@@ -1261,82 +1261,109 @@
 
 
                 <!-- curved principal -->
-                <a-curvedimage height="10" radius="10" theta-length="120" rotation="0 119 0" scale="1 1 1"
-                    position="0 1.25 0" opacity=0.65 color="#000000">
+                <a-curvedimage height="6" radius="10" theta-length="70" rotation="0 145 0" scale="1 1 1"
+                    position="0 1.25 8" opacity=0.65 color="#000000">
                 </a-curvedimage>
+
+                <!-- curved logo -->
                 <a-curvedimage src="#my-logo" height="1.30" radius="9.9" theta-length="40" rotation="0 160 0"
-                    scale="0.6 0.6 0.6" position="0 4.6 0">
+                    scale="0.4 0.4 0.4" position="0 3.75 2.25">
+                </a-curvedimage>
+
+                <!-- curved Settings -->
+
+                <a-curvedimage src="#my-Settings" height="1" radius="9.9" theta-length="20" rotation="0 140 0"
+                    scale="0.5 0.5 0.5" position="2 3.75 3.75">
                 </a-curvedimage>
 
 
-                <a-curvedimage src="#my-Settings" height="1" radius="9.9" theta-length="20" rotation="0 122.5 0"
-                    scale="1 1 1" position="0 5.5 0">
-                </a-curvedimage>
-                <a-curvedimage height="1" radius="9.9" theta-length="20" rotation="0 122.5 0" scale="1 1 1"
-                    position="0 5.5 0.1" color="#FFFFFF" opacity="0" event-setting>
+                <a-curvedimage height="1" radius="9.9" theta-length="20" rotation="0 140 0" scale="0.5 0.5 0.5"
+                    color="#FFFFFF" opacity="0" position="2 3.75 3.8" event-setting>
                 </a-curvedimage>
 
+                <!--end curved Settings -->
 
-                <a-curvedimage src="#my-About" height="1" radius="9.9" theta-length="20" rotation="0 215 0"
-                    scale="1 1 1" position="0 5.5 0">
-                </a-curvedimage>
-                <a-curvedimage height="1" radius="9.9" theta-length="20" rotation="0 215 0" scale="1 1 1"
-                    position="0 5.5 0.1" color="#FFFFFF" opacity="0" event-about>
-                </a-curvedimage>
+                <!-- curved About -->
 
 
-                <a-curvedimage height="5" radius="9.9" theta-length="112" rotation="0 122.5 0" scale="1 1 1"
-                    position="0 2.2 0" src="#start">
-                </a-curvedimage>
-                <a-curvedimage height="5" radius="9.9" theta-length="112" rotation="0 122.5 0" scale="1 1 1"
-                    position="0 2.2 0.1" color="#FFFFFF" opacity="0" event-start>
+                <a-curvedimage src="#my-About" height="1" radius="9.9" theta-length="20" rotation="0 200 0"
+                    scale="0.5 0.5 0.5" position="-2 3.75 3.75">
                 </a-curvedimage>
 
-                <a-curvedimage height="2.75" radius="9.9" theta-length="22" rotation="0 122.5 0" scale="1 1 1"
-                    position="0 -2 0" src="#my-insects">
+                <a-curvedimage height="1" radius="9.9" theta-length="20" rotation="0 200 0" scale="0.5 0.5 0.5"
+                    position="-2 3.75 3.8" color="#FFFFFF" opacity="0" event-about>
                 </a-curvedimage>
 
-                <a-curvedimage height="2.75" radius="9.9" theta-length="22" rotation="0 122.5 0" scale="1 1 1"
-                    position="0 -2 0.1" color="#FFFFFF" opacity="0" event-insects></a-curvedimage>>
+                <!--end curved About -->
+
+                <!-- curved start -->
+
+                <a-curvedimage height="3" radius="9.9" theta-length="70" rotation="0 144.5 0" scale="0.8 0.8 0.8"
+                    position="0 1.75 6.50" src="#start">
                 </a-curvedimage>
 
 
-                <a-curvedimage height="2.75" radius="9.9" theta-length="22" rotation="0 145 0" scale="1 1 1"
-                    position="0 -2 0" src="#my-glare">
+                <a-curvedimage height="3" radius="9.9" theta-length="70" rotation="0 144.5 0" scale="0.8 0.8 0.8"
+                    position="0 1.75 6.51" color="#FFFFFF" opacity="0" event-start>
                 </a-curvedimage>
 
-                <a-curvedimage height="2.75" radius="9.9" theta-length="22" rotation="0 145 0" scale="1 1 1"
-                    position="0 -2 0.1" color="#FFFFFF" opacity="0" event-glare>
+                <!--end curved start -->
+                <!-- curved insects -->
+
+                <a-curvedimage height="3" radius="9.9" theta-length="22" rotation="0 135 0" scale="0.5 0.5 0.5"
+                    position="1.15 -0.5 3.5" src="#my-insects">
                 </a-curvedimage>
 
+                <a-curvedimage height="3" radius="9.9" theta-length="22" rotation="0 135 0" scale="0.5 0.5 0.5"
+                    position="1.15 -0.5 3.51" color="#FFFFFF" opacity="0" event-insects>
+                </a-curvedimage>
+                <!--end curved insects -->
+                <!-- curved glare -->
 
-                <a-curvedimage height="2.75" radius="9.9" theta-length="22" rotation="0 167.5 0" scale="1 1 1"
-                    position="0 -2 0" src="#my-rain">
+                <a-curvedimage height="3" radius="9.9" theta-length="22" rotation="0 153 0" scale="0.5 0.5 0.5"
+                    position="0.75 -0.5 3.25" src="#my-glare">
                 </a-curvedimage>
 
-                <a-curvedimage height="2.75" radius="9.9" theta-length="22" rotation="0 167.5 0" scale="1 1 1"
-                    position="0 -2 0.1" color="#FFFFFF" opacity="0" event-rain>
+                <a-curvedimage height="3" radius="9.9" theta-length="22" rotation="0 153 0" scale="0.5 0.5 0.5"
+                    position="0.75 -0.5 3.26" color="#FFFFFF" opacity="0" event-glare>
+                </a-curvedimage>
+                <!--end curved glare -->
+
+
+                <!-- curved rain -->
+
+                <a-curvedimage height="3" radius="9.9" theta-length="22" rotation="0 168 0" scale="0.5 0.5 0.5"
+                    position="0 -0.5 3.20" src="#my-rain">
                 </a-curvedimage>
 
+                <a-curvedimage height="3" radius="9.9" theta-length="22" rotation="0 168 0" scale="0.5 0.5 0.5"
+                    position="0 -0.5 3.21" color="#FFFFFF" opacity="0" event-rain>
+                </a-curvedimage>
+                <!--end curved rain -->
 
-                <a-curvedimage height="2.75" radius="9.9" theta-length="22" rotation="0 190 0" scale="1 1 1"
-                    position="0 -2 0" src="#my-Debris">
+                <!-- curved Debris -->
+
+
+                <a-curvedimage height="3" radius="9.9" theta-length="22" rotation="0 180 0" scale="0.5 0.5 0.5"
+                    position="-1 -0.5 3.25" src="#my-Debris">
                 </a-curvedimage>
 
-                <a-curvedimage height="2.75" radius="9.9" theta-length="22" rotation="0 190 0" scale="1 1 1"
-                    position="0 -2 0.1" color="#FFFFFF" opacity="0" event-debris>
+                <a-curvedimage height="3" radius="9.9" theta-length="22" rotation="0 180 0" scale="0.5 0.5 0.5"
+                    position="-1 -0.5 3.26" color="#FFFFFF" opacity="0" event-debris>
+                </a-curvedimage>
+                <!--end curved Debris -->
+                <!-- curved snow -->
+
+                <a-curvedimage height="3" radius="9.9" theta-length="22" rotation="0 200 0" scale="0.5 0.5 0.5"
+                    position="-1.25 -0.5 3.5" src="#my-snow">
                 </a-curvedimage>
 
-
-
-                <a-curvedimage height="2.75" radius="9.9" theta-length="22" rotation="0 212.5 0" scale="1 1 1"
-                    position="0 -2 0" src="#my-snow">
+                <a-curvedimage height="3" radius="9.9" theta-length="22" rotation="0 200 0" scale="0.5 0.5 0.5"
+                    position="-1.25 -0.5 3.51" color="#FFFFFF" opacity="0" event-snow>
                 </a-curvedimage>
+                <!--end curved snow -->
 
 
-                <a-curvedimage height="2.75" radius="9.9" theta-length="22" rotation="0 212.5 0" scale="1 1 1"
-                    position="0 -2 0.1" color="#FFFFFF" opacity="0" event-snow>
-                </a-curvedimage>
 
 
                 <!-- <a-curvedimage height="3.0" radius="5.7" theta-length="72" rotation="0 100 0" scale="1 1 1"
@@ -1368,18 +1395,9 @@
                     position="0 2.2 2" color="#FFF" opacity="0">
                 </a-curvedimage> -->
 
-
-
-
-
-
-
-
-
                 <!-- <a-curvedimage id="eventabout1" height="2" radius="9.9" theta-length="18" rotation="0 192 0"
                     scale="1 1 1" position="0 -1.5 0" src="#my-about">
                 </a-curvedimage>
-
 
                 <a-curvedimage id="hover6" height="2" radius="9.9" theta-length="18" rotation="0 192 0" scale="1 1 1"
                     position="0 -1.5 0.1" color="#FFF" opacity="0.0" event-about>
